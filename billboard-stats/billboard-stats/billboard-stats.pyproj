@@ -32,6 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\forms.py" />
+    <Compile Include="app\helpers\analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\helpers\extraction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\helpers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
@@ -45,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\helpers\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
