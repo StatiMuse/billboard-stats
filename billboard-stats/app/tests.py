@@ -35,5 +35,5 @@ class ViewTest(TestCase):
 
 class ExtractionHelperTest(TestCase):
     def test_extract_gender(self):
-        self.assertEquals('Female', extraction.extract_gender('Beyonce'))
-        self.assertEquals('Male', extraction.extract_gender('Diplo'))
+        self.assertEquals('female', extraction.extract_gender('Beyonce'))
+        self.assertEquals('male', extraction.extract_gender('Diplo'))
