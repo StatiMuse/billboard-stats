@@ -5,7 +5,7 @@ when you run "manage.py test".
 
 import django
 from django.test import TestCase
-
+from helpers import extraction 
 # TODO: Configure your database in settings.py and sync before running tests.
 
 class ViewTest(TestCase):
@@ -32,3 +32,8 @@ class ViewTest(TestCase):
         """Tests the about page."""
         response = self.client.get('/about')
         self.assertContains(response, 'About', 3, 200)
+
+class ExtractionHelperTest(TestCase):
+    def test_extract_gender(self):
+        self.assertEquals('Female', extraction.extract_gender('Beyonce'))
+        self.assertEquals('Male', extraction.extract_gender('Diplo'))
