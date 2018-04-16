@@ -3,3 +3,4 @@ env
 *.egg
 billboard-stats/.vs/billboard-stats/v15/.suo
 *.suo
+.vscode
